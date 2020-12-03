@@ -75,8 +75,10 @@ def test(count):
         # logging.info(f'Attempting to Acquire: {threadname} += {count}')
         # with lock:
         #     logging.info(f'Locked: {threadname}')
-        #     counter += 1
+        #     tmpCounter = counter
+        #     tmpCounter += 1
         #     time.sleep(2)
+        #     counter = tmpCounter
 
     logging.info(f'Completed: {threadname}')
 
